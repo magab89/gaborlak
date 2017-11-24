@@ -1,0 +1,6 @@
+2017-11-24 11:21:08 WARNING (MainThread) [homeassistant.setup] Setup of sensor is taking over 10 seconds.
+2017-11-24 11:21:09 WARNING (MainThread) [homeassistant.setup] Setup of media_player is taking over 10 seconds.
+2017-11-24 11:21:09 WARNING (MainThread) [homeassistant.setup] Setup of light is taking over 10 seconds.
+2017-11-24 11:21:24 ERROR (SyncWorker_8) [homeassistant.util.package] Unable to install package netdisco==1.2.3: Command "d:\HOMEAS~1\hass\Scripts\python.exe -u -c "import setuptools, tokenize;__file__='C:\\Users\\Gabor\\AppData\\Local\\Temp\\pip-build-mf_0n1zh\\netifaces\\setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record C:\Users\Gabor\AppData\Local\Temp\pip-slj45crb-record\install-record.txt --single-version-externally-managed --compile --install-headers d:\HOMEAS~1\hass\include\site\python3.6\netifaces" failed with error code 1 in C:\Users\Gabor\AppData\Local\Temp\pip-build-mf_0n1zh\netifaces\
+2017-11-24 11:21:24 ERROR (MainThread) [homeassistant.setup] Not initializing discovery because could not install dependency netdisco==1.2.3
+2017-11-24 11:21:24 ERROR (MainThread) [homeassistant.setup] Setup failed for discovery: Could not install all requirements.

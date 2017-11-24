@@ -1,0 +1,12 @@
+light.gateway_light_34ce00fa5a26:
+  friendly_name: Gateway Light
+sensor.humidity_158d00019cb4df:
+  friendly_name: Hum Erkely
+sensor.temperature_158d00019cb4df:
+  friendly_name: Temp Erkely
+sensor.temperature_158d0001b7a384:
+  friendly_name: Temp Konyha
+sensor.humidity_158d0001b7a384:
+  friendly_name: Hum Konyha
+binary_sensor.cube_158d00010b2dde:
+  friendly_name: Cube

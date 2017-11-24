@@ -1,0 +1,80 @@
+- id: auto_cube_flip90
+  alias: Flip 90
+  trigger:
+    platform: event
+    event_type: cube_action
+    event_data:
+      entity_id: binary_sensor.cube_158d00010b2dde
+      action_type: flip90
+  action:
+    service: light.turn_on
+    entity_id: group.living_room
+- id: auto_cube_flip180
+  alias: Flip 180
+  trigger:
+    platform: event
+    event_type: cube_action
+    event_data:
+      entity_id: binary_sensor.cube_158d00010b2dde
+      action_type: flip180
+  action:
+    service: light.turn_off
+    entity_id: group.living_room
+- id: auto_cube_rotate
+  alias: Rotate
+  trigger:
+    platform: event
+    event_type: cube_action
+    event_data:
+      entity_id: binary_sensor.cube_158d00010b2dde
+      action_type: rotate
+  action:
+    service: light.toggle
+    entity_id: group.living_room
+- id: auto_cube_tap_twice
+  alias: TapTap
+  trigger:
+    platform: event
+    event_type: cube_action
+    event_data:
+      entity_id: binary_sensor.cube_158d00010b2dde
+      action_type: tap_twice
+  action:
+    service: media_player.select_source
+    data:
+      entity_id: media_player.spotify
+      source: DESKTOP-PTIF3D9
+- id: auto_cube_fall
+  alias: FreeFall
+  trigger:
+    platform: event
+    event_type: cube_action
+    event_data:
+      entity_id: binary_sensor.cube_158d00010b2dde
+      action_type: free_fall
+  action:
+    service: media_player.media_pause
+    entity_id: media_player.spotify
+- id: auto_cube_swing
+  alias: Move
+  trigger:
+  - event_data:
+      action_type: move
+      entity_id: binary_sensor.cube_158d00010b2dde
+    event_type: cube_action
+    platform: event
+  action:
+  - data:
+      entity_id: groups.living_room
+    service: light.toggle
+- id: auto_cube_shake
+  alias: ShakeAir
+  trigger:
+    platform: event
+    event_type: cube_action
+    event_data:
+      entity_id: binary_sensor.cube_158d00010b2dde
+      action_type: shake_air
+  action:
+    service: media_player.media_play_pause
+    entity_id: media_player.spotify
